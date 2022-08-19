@@ -6,4 +6,13 @@ services:
     container_name: backend_p1_201903848
     ports:
       - 4000:4000
-  
+  frontend:
+    build: ./frontend
+    container_name: frontend_p1_201903848
+    ports:
+    - 3000:3000
+    volumes:
+      - ./frontend:/app
+      - ./app/node_modules
+    stdin_open: true
+    tty: true 
