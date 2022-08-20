@@ -1,0 +1,8 @@
+use practica1
+db.carros.insertOne({Placa:"P123ABC", Marca:"Toyota", Modelo:"2021", Serie:"Corola", Color:"Rojo"})
+show db.carros
+db.carros.find({})
+db.carros.find({})
+use practica1
+show collections
+db.carros.find({})

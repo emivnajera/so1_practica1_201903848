@@ -15,4 +15,8 @@ services:
       - ./frontend:/app
       - ./app/node_modules
     stdin_open: true
-    tty: true 
+    tty: true
+  db:
+    image: mongo
+    volumes:
+      - ./database:/data/db
