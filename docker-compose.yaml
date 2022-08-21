@@ -2,13 +2,15 @@ version: '3.8'
 
 services:
   backend:
+    image: emivnajera/backend_p1_201903848
     build: ./backend
-    container_name: backend_p1_201903848
+    container_name: backend
     ports:
       - 4000:4000
   frontend:
+    image: emivnajera/frontend_p1_201903848
     build: ./frontend
-    container_name: frontend_p1_201903848
+    container_name: frontend
     ports:
     - 3000:3000
     volumes:
@@ -20,3 +22,6 @@ services:
     image: mongo
     volumes:
       - ./database:/data/db
+
+
+
